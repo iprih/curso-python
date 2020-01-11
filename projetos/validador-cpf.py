@@ -46,7 +46,9 @@ for index in range(19):
             d = 0
         total = 0
         novo_cpf += str(d)
-if cpf == novo_cpf:
+# Evita sequencias
+sequencia = novo_cpf == str(novo_cpf[0]) * len(cpf)
+if cpf == novo_cpf and not sequencia:
     print('Valido')
 else:
     print('Invalido')
