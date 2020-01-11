@@ -20,5 +20,5 @@ if not idade.isnumeric():
 else:
     idade = int(idade)
     maior_de_idade = (idade >= 18)
-    msg2 = 'Pode acessar' if maior_de_idade else 'Nao pode acessar.'
+    msg2 = 'Pode acessar, é de maior' if maior_de_idade else 'Nao pode acessar pois é de menor.'
     print(msg2)
